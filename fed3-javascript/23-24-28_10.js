@@ -1,10 +1,10 @@
 /*let target = document.getElementById('target');
 target.textContent = 'Hello!';
-console.log('hello!');  */
+console.log('hello!'); 
 
 
 
-/* scrivere una funziona che ritorni true se il valore precedente è pari (isEven(n)), false se dispari. */
+// scrivere una funziona che ritorni true se il valore precedente è pari (isEven(n)), false se dispari.
 
 function isEven(n) {
     if (!Number.isInteger(n)) {
@@ -42,7 +42,7 @@ console.log("---------------esercizio-------------")
 
 
 
-/* scrivere la funzione speed(distanza,tempo), mi deve dare la velocità */
+// scrivere la funzione speed(distanza,tempo), mi deve dare la velocità
 
 function speed(distance, time) {
     if (distance >= 0 && time > 0) {
@@ -65,7 +65,7 @@ console.log("--------------------esercizio--------")
 
 
 
-/* digitSum(number) ritorna la somma delle cifre (127 =>  10;    111 =>3;     -51 =>6);  number deve essere intero */
+// digitSum(number) ritorna la somma delle cifre (127 =>  10;    111 =>3;     -51 =>6);  number deve essere intero
 
 
 function digitSum(number) {
@@ -147,7 +147,87 @@ console.log(findposition(['1'], 1) === -1);
 console.log(findposition([], 57) === -1);
 console.log(findposition([NaN], NaN) === 0);
 
+*/
+
+console.log("--------dato alesaggio,corsa e cilindri mi torna la mia cilindrata--------------------------esercizio------------")
+
+
+function cilindrata(alesaggio, corsa, cilindri) {
+    let cilindrata = 0;
+    cilindrata = cilindri * (((alesaggio / 2) ** 2) * Math.PI * corsa / 10 ** 3);
+
+    return Math.round(cilindrata);
+}
+
+console.log(cilindrata(73.4, 78.6, 3) === 998);
+console.log(cilindrata(73.4, 72.6, 4) === 1229);
+console.log(cilindrata(73.4, 80.6, 4) === 1364);
 
 
 
 
+
+
+console.log("----------------------------------esercizio------------")
+
+
+function distanza(x1, x2, y1, y2) {
+    let distanza = 0;
+    distanza = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+    return distanza;
+}
+console.log(distanza(4, 5, 7, 7) === 1);
+
+
+
+
+
+
+/*   let r10 = 1;
+let r5 = 5
+let r1 = 1
+
+console.log("---------------------------esercizio------------")
+
+
+
+
+
+
+
+
+
+
+
+console.log("---------------------------esercizio------------")
+
+
+function checkSign(value) {
+   let sign = 0;
+   if (value < 0) {
+       sign = "negative";
+   } else if (value > 0) {
+       sign = "positive";
+   } else if (value = 0) {
+       sign = "zero" {
+
+
+
+
+*/
+
+
+
+console.log("--------------------esercizio")
+data[
+    [1, 2, 3, 4],
+    [2, 0, 0, 0],
+    [3, 0, 0, 0],
+    [4, 0, 0, 0],
+    [5, 0, 0, 0]
+];
+for (i = 0; i < data.lenght; i++){
+    
+
+
+console.log(data);
