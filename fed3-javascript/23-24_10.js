@@ -148,3 +148,4 @@ console.log(findposition([], 57) === -1);
 console.log(findposition([NaN], NaN) === 0);
 
 
+ 
