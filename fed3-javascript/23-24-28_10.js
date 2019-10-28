@@ -171,7 +171,7 @@ console.log(cilindrata(73.4, 80.6, 4) === 1364);
 console.log("----------------------------------esercizio------------")
 
 
-function distanza(x1, x2, y1, y2) {
+function distanza(x1, y1, x2, y2) {
     let distanza = 0;
     distanza = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
     return distanza;
@@ -226,8 +226,11 @@ data[
     [4, 0, 0, 0],
     [5, 0, 0, 0]
 ];
-for (i = 0; i < data.lenght; i++){
-    
+
+function somaCol(n)
+
 
 
 console.log(data);
+
+
