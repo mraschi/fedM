@@ -126,16 +126,25 @@ function check(m) {
 
 console.log(check(3));
 
+console.log("---------------------------esercizio------------")
 
+let a = [1, 2, 3]
 
+function findposition(data, value) {
+    for (let i = 0; i < a.length; i++) {
+        if (data[i] === value) {
+            return i;
+        }
+    } return -1;
+}
 
-
-
-
-
-
-
-
-
+console.log(findposition([1, 2, 3], 5) === -1);
+console.log(findposition([1, 2, 3], 3) === 2);
+console.log(findposition([1, 2, 3], 1) === 0);
+console.log(findposition([NaN, 1], 1) === 1);
+console.log(findposition([1, 1, 1], 1) === 0);
+console.log(findposition(['1'], 1) === -1);
+console.log(findposition([], 57) === -1);
+console.log(findposition([NaN]), NaN) === 0);
 
 
