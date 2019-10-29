@@ -77,29 +77,30 @@ console.log(sommaC([
 
 // [1,2,3,4] e [3,4,5,6] => [1,2,3,3,4,4,5,6] devo creare un array con gli stessi elementi e li riordino
 
- /*function riordina(primo, secondo) {
-    let ordinato = [];
+/*function riordina(primo, secondo) {
+   let ordinato = [];
 
-    for let(i = 0, j = 0; i < primo.length && j < secondo.length; i++ , j++;) {
-        if (primo[i] <= secondo[j]) {
-            ordinato.push(primo[i]);
-        } else {
-            ordinato.push(secondo[j]);
-        }
-    } return ordinato;
+   for let(i = 0, j = 0; i < primo.length && j < secondo.length; i++ , j++;) {
+       if (primo[i] <= secondo[j]) {
+           ordinato.push(primo[i]);
+       } else {
+           ordinato.push(secondo[j]);
+       }
+   } return ordinato;
 } */
 
+
 console.log("-------------------esercizio")
-
-
-
-
-
-
-
-
-
-
-
-
-
+function getSingle(arr) {
+    arr.sort((a, b) => {
+        if (a == b) {
+            return 0;
+        } else if (a < b) {
+            return -1;
+        } else {
+            return +1;
+        }
+    });
+return arr;
+}
+console.log(getSingle([1, 2, 3, 2, 1]));
