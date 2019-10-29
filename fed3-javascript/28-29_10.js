@@ -46,20 +46,20 @@ function sommaC(data) {
         for (j = 0; j < data[i].length; j++) {
             sommaC[j] = (sommaC[j] || 0) + data[i][j];
 
-        } 
-    }return sommaC;
+        }
+    } return sommaC;
 }
 
 function sommaR(data) {
-    let sommaR= [];
+    let sommaR = [];
     for (i = 0; i < data.length; i++) {
         for (j = 0; j < data[i].length; j++) {
             sommaR[i] = (sommaR[i] || 0) + data[i][j];
 
-         }
-    }return sommaR;
+        }
+    } return sommaR;
 }
-    console.log(sommaR([
+console.log(sommaR([
     [1, 2, 3, 4],
     [2, 2, 3, 4],
     [3, 2, 3, 4],
@@ -75,10 +75,31 @@ console.log(sommaC([
     [5, 2, 3, 4]
 ]));
 
-
-
-
-console.log("--------------------------------esercizio")
 // [1,2,3,4] e [3,4,5,6] => [1,2,3,3,4,4,5,6] devo creare un array con gli stessi elementi e li riordino
 
-function merge(left,right) 
+ /*function riordina(primo, secondo) {
+    let ordinato = [];
+
+    for let(i = 0, j = 0; i < primo.length && j < secondo.length; i++ , j++;) {
+        if (primo[i] <= secondo[j]) {
+            ordinato.push(primo[i]);
+        } else {
+            ordinato.push(secondo[j]);
+        }
+    } return ordinato;
+} */
+
+console.log("-------------------esercizio")
+
+
+
+
+
+
+
+
+
+
+
+
+
