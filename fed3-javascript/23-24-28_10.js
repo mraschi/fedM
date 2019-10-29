@@ -149,14 +149,14 @@ console.log(findposition([NaN], NaN) === 0);
 
 */
 
-console.log("--------dato alesaggio,corsa e cilindri mi torna la mia cilindrata--------------------------esercizio------------")
+/*console.log("--------dato alesaggio,corsa e cilindri mi torna la mia cilindrata--------------------------esercizio------------")
 
 
 function cilindrata(alesaggio, corsa, cilindri) {
-    let cilindrata = 0;
-    cilindrata = cilindri * (((alesaggio / 2) ** 2) * Math.PI * corsa / 10 ** 3);
+   let cilindrata = 0;
+   cilindrata = cilindri * (((alesaggio / 2) ** 2) * Math.PI * corsa / 10 ** 3);
 
-    return Math.round(cilindrata);
+   return Math.round(cilindrata);
 }
 
 console.log(cilindrata(73.4, 78.6, 3) === 998);
@@ -172,65 +172,59 @@ console.log("----------------------------------esercizio------------")
 
 
 function distanza(x1, y1, x2, y2) {
-    let distanza = 0;
-    distanza = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
-    return distanza;
+   let distanza = 0;
+   distanza = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+   return distanza;
 }
-console.log(distanza(4, 5, 7, 7) === 1);
+console.log(distanza(4, 5, 7, 7) === 1); */
 
-
-
-
-
-
-/*   let r10 = 1;
-let r5 = 5
-let r1 = 1
-
-console.log("---------------------------esercizio------------")
-
-
-
-
-
-
-
-
-
-
-
-console.log("---------------------------esercizio------------")
-
+console.log("---------------------------esercizio------------");
 
 function checkSign(value) {
-   let sign = 0;
-   if (value < 0) {
-       sign = "negative";
-   } else if (value > 0) {
-       sign = "positive";
-   } else if (value = 0) {
-       sign = "zero" {
+    let sign = 0;
+    if (isNaN(value)) {
+        return undefined;
+    } else if (value < 0) {
+        sign = "negative";
+    } else if (value > 0) {
+        sign = "positive";
+    } else if (value = 0) {
+        sign = "zero";
+    } return sign;
+}
 
 
+console.log(checkSign(11) === "positive");
+console.log(checkSign(+2.89) === "positive");
+console.log(checkSign(-1.54) === "negative");
+console.log(checkSign("-8") === "negative");
+console.log(checkSign(Math.PI) === "positive");
+console.log(checkSign("hello") == undefined);
 
+console.log("--------------------------------esercizio")
 
-*/
+function dispari(value) {
+    if (value % 2 == 0) {
+        return false;
+    } 
+    else { 
+        return true; 
+    }
+}
 
+console.log(dispari(14) == false);
+console.log(dispari(4) == false);
+console.log(dispari(25) == true);
+console.log(dispari(82) == false);
+console.log(dispari(44) == false);
 
-
-console.log("--------------------esercizio")
+/*console.log("--------------------esercizio")
 data[
-    [1, 2, 3, 4],
-    [2, 0, 0, 0],
-    [3, 0, 0, 0],
-    [4, 0, 0, 0],
-    [5, 0, 0, 0]
+   [1, 2, 3, 4],
+   [2, 0, 0, 0],
+   [3, 0, 0, 0],
+   [4, 0, 0, 0],
+   [5, 0, 0, 0]
 ];
 
-function somaCol(n)
-
-
-
-console.log(data);
-
-
+function somaCol(n) */
