@@ -104,3 +104,22 @@ function getSingle(arr) {
 return arr;
 }
 console.log(getSingle([1, 2, 3, 2, 1]));
+
+
+console.log("-------------------esercizio")
+
+function duplicates(arr) {
+
+arr.sort((a, b) => {
+    if (a == b) {
+            return 0;
+        } else if (a < b) {
+            return -1;
+        } else {
+            return +1;
+        }
+    });
+return arr;
+}
+
+
