@@ -1,8 +1,3 @@
-/*let target = document.getElementById('target');
-target.textContent = 'Hello!';
-console.log('hello!'); 
-
-
 
 // scrivere una funziona che ritorni true se il valore precedente è pari (isEven(n)), false se dispari.
 
@@ -147,9 +142,9 @@ console.log(findposition(['1'], 1) === -1);
 console.log(findposition([], 57) === -1);
 console.log(findposition([NaN], NaN) === 0);
 
-*/
 
-/*console.log("--------dato alesaggio,corsa e cilindri mi torna la mia cilindrata--------------------------esercizio------------")
+
+console.log("--------dato alesaggio,corsa e cilindri mi torna la mia cilindrata--------------------------esercizio------------")
 
 
 function cilindrata(alesaggio, corsa, cilindri) {
@@ -167,7 +162,7 @@ console.log(cilindrata(73.4, 80.6, 4) === 1364);
 
 
 
-<br
+
 console.log("----------------------------------esercizio------------")
 
 
@@ -176,71 +171,4 @@ function distanza(x1, y1, x2, y2) {
    distanza = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
    return distanza;
 }
-console.log(distanza(4, 5, 7, 7) === 1); */
-
-console.log("---------------------------esercizio------------");
-
-function checkSign(value) {
-    let sign = 0;
-    if (isNaN(value)) {
-        return undefined;
-    } else if (value < 0) {
-        sign = "negative";
-    } else if (value > 0) {
-        sign = "positive";
-    } else if (value = 0) {
-        sign = "zero";
-    } return sign;
-}
-
-
-console.log(checkSign(11) === "positive");
-console.log(checkSign(+2.89) === "positive");
-console.log(checkSign(-1.54) === "negative");
-console.log(checkSign("-8") === "negative");
-console.log(checkSign(Math.PI) === "positive");
-console.log(checkSign("hello") == undefined);
-
-console.log("--------------------------------esercizio")
-
-function dispari(value) {
-    if (value % 2 == 0) {
-        return false;
-    }
-    else {
-        return true;
-    }
-}
-
-console.log(dispari(14) == false);
-console.log(dispari(4) == false);
-console.log(dispari(25) == true);
-console.log(dispari(82) == false);
-console.log(dispari(44) == false)
-
-console.log("--------------------------------esercizio")
-
-function sommaC(data) {
-    let sommaC = [];
-    for (i = 0; i < data.length; i++) {
-        for (j = 0; j < data[i].length; j++) {
-            sommaC = sommaC + data[i][n];
-        } return sommaC;
-    }
-}
-
-console
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(distanza(4, 5, 7, 7) === 1);
