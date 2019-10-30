@@ -1,7 +1,7 @@
 function fibonacci(n) {
     let prev = 1;
     let cur = 1;
-    for (i = 1; i <= n; ++i) {
+    for (i = 2; i <= n; ++i) {
         let temp = prev + cur;
         prev = cur;
         cur = temp;
