@@ -139,7 +139,7 @@ function getSingle(value) {
         if (unique) {
             return value[i];
         }
-        
+
 
     } return undefined;
 
@@ -147,13 +147,36 @@ function getSingle(value) {
 console.log(getSingle([1, 2, 3, 4, 4, 5, 3, 7, 5, 2, 1]));
 
 console.log("-------------------esercizio num. binari")
+function sommaBin(left, right) {
+    let carry = 0;
+    let result = [];
+    for (let i = left.length; i >= 0; i--) {
+        let sx = Number(left[i]);
+        let dx = Number(right[i]);
+        let sum = sx + dx + carry;
+        switch (sum) {
+            case 0: result[i] = '0';
+                carry = 0
+                break;
+            case 1: result[i] = '1';
+                carry = 0
+                break;
+            case 2: result[i] = '0';
+                carry = 0
+                break;
+            case 3: result[i] = '1';
+                carry = 0
+                break;
+        }
+    }
+    let sResult = result.join("");
+    if (carry) {
+        sResult = 1 + sResult;
+    }
+    return sResult;
+}
 
-
-
-
-
-
-
+console.log(SommaBin('010', '101'));
 
 
 
