@@ -90,34 +90,75 @@ console.log(sommaC([
 } */
 
 
-console.log("-------------------esercizio")
-function getSingle(arr) {
+console.log("-------------------esercizio con sort(soluzione meno costosa)")
+
+function ordina(arr) {
     arr.sort((a, b) => {
         if (a == b) {
-            return 0;
-        } else if (a < b) {
+            return 0;                           // riordinare un array
+        } else if (a < b) {                 // devo trovare nel mio array il mio valore singolo
             return -1;
         } else {
             return +1;
         }
     });
-return arr;
+    return arr;
 }
-console.log(getSingle([1, 2, 3, 2, 1]));
+console.log(ordina([1, 5, 3, 9, 4]));
 
+
+/*console.log("-------------------esercizio")
+
+/*function duplicates(arr) {
+
+arr.sort((a, b) => {
+  if (a == b) {
+          return 0;
+      } else if (a < b) {
+          return -1;
+      } else {
+          return +1;
+      }
+  });
+return arr;
+} */
 
 console.log("-------------------esercizio")
 
- /*function duplicates(arr) {
+function getSingle(value) {
 
-arr.sort((a, b) => {
-    if (a == b) {
-            return 0;
-        } else if (a < b) {
-            return -1;
-        } else {
-            return +1;
+    for (i = 0; i < value.length; i++) {
+        let unique = true;
+        for (j = 0; j < value.length; j++) {                // trovare il valore singolo nel mio array
+            if (i == j) {                                   // non va messo ELSE perchè prima devo scandire tutto l'ARRAY
+                continue;
+            } if (value[i] == value[j]) {
+                unique = false;
+            }
         }
-    });
-return arr;
-} */
+        if (unique) {
+            return value[i];
+        }
+        
+
+    } return undefined;
+
+}
+console.log(getSingle([1, 2, 3, 4, 4, 5, 3, 7, 5, 2, 1]));
+
+console.log("-------------------esercizio num. binari")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
