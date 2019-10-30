@@ -9,3 +9,28 @@ function fibonacci(n) {
     return cur;
 }
 console.log(fibonacci(13) === 377);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

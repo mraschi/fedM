@@ -108,7 +108,7 @@ console.log(getSingle([1, 2, 3, 2, 1]));
 
 console.log("-------------------esercizio")
 
-function duplicates(arr) {
+ /*function duplicates(arr) {
 
 arr.sort((a, b) => {
     if (a == b) {
@@ -120,6 +120,4 @@ arr.sort((a, b) => {
         }
     });
 return arr;
-}
-
-
+} */
