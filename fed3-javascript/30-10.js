@@ -2,12 +2,12 @@ function fibonacci(n) {
     let prev = 1;
     let cur = 1;
     for (i = 1; i <= n; ++i) {
-        temp = prev + cur;
+        let temp = prev + cur;
         prev = cur;
         cur = temp;
     }
-return cur;
+    return cur;
 }
-console.log(fibonacci(13) ===377;
+console.log(fibonacci(13) === 377);
 
 
