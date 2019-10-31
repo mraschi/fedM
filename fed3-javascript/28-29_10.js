@@ -176,7 +176,7 @@ function sommaBin(left, right) {
     return sResult;
 }
 
-console.log(SommaBin('010', '101'));
+console.log(sommaBin('010', '101'));
 
 
 
