@@ -9,5 +9,14 @@ function check() {
 }
 
 
-
-
+function changeBcolor()  {
+    let color = document.getElementById('color').value;
+document.bgColor = color;
+if (color= "")     {
+    window.alert("insert a color");
+   return false;
+} else if (color== "red") {
+    document.bgColor= "red";
+}
+window.alert("!");
+return false;
