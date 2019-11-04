@@ -68,25 +68,52 @@ console.log(digitsMultip(1234));
 
 function findMessage(data) {
     let message = [];                                                         // dato testo devo mettere insieme le lettere maiuscole per ottenerle in una stringa
-    let parola="";
-  //  message = data.split(',');
+    let parola = "";
+    //  message = data.split(',');
     for (let i = 0; i < data.length; i++) {
         if (data[i] === data[i].toUpperCase() && data[i] !== data[i].toLowerCase()) {
             message.push(data[i]);
         }
-     parola = message.join("");
+        parola = message.join("");
     }
     return parola;
 }
-console.log(findMessage("Ciao Come Va")==="CCV");
+console.log(findMessage("Ciao Come Va") === "CCV");
 console.log(findMessage("Io sono JMarco"));
 
 
 
+function secondIndex(text, symbol) {
+    let i = text.indexOf(symbol);
+
+    if (i == -1) {
+        return undefined;
+    }
+    let j = text.indexOf(symbol, i + 1);
+
+    if (j == -1) {
+        return undefined;
+    }
+    return j;
+}
 
 
+console.log(secondIndex("sims", "s") == 3);
+console.log(secondIndex("find the river", "e") == 12);
 
+function correctSentence(text) {
+    let message = [];
+    let parola = "";
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] === text[i].toUpperCase()) {
+            message.push(text[i]);
+        }
+        parola = message.join("");
+    }
+    return parola;
+}
 
+console.log(correctSentence("greetings, friends") == "greetings, friends.");
 
 
 
