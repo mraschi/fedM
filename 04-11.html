@@ -11,8 +11,6 @@
 
 <body>
     <h2>interazioni js-html: form </h2>
-    <script src="04-11.js"></script>
-
 
     <form action="action" onsubmit="return check();">
         <input id="user">
@@ -20,12 +18,32 @@
     </form>
 
     <hr>
-    <label>change background color</label>
+    <label>color</label>
     <input id="color">
-    <button onclick="changeBcolor();">change</button>
+    <button action="action" onclick="changeBgcolor();">change</button>
+
+
+
+    <hr>
+    <select name="selectColor" id="selectColor" onchange="changeBgcolorSelect()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+    </select>
+   
+
+
+
+
+
+
+    <hr>
+    <h1 id="titoloonMouse">ciao</select>
+        <div id="onMouse" action="action" onmouseover="return changeOnMouse();"></div>
+
+
 
 
 </body>
-
 
 </html>

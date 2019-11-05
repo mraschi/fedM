@@ -9,14 +9,21 @@ function check() {
 }
 
 
-function changeBcolor()  {
-    let color = document.getElementById('color').value;
-document.bgColor = color;
-if (color= "")     {
-    window.alert("insert a color");
-   return false;
-} else if (color== "red") {
-    document.bgColor= "red";
+function changeBgcolor() {
+    let color = document.getElementById("color").value;
+        document.bgColor = color;
 }
-window.alert("!");
-return false;
+
+function changeBgcolorSelect() {
+    let color = document.getElementById("selectColor").value;
+        document.bgColor = color;
+}
+
+
+
+window.onload = (ev) => {
+    let target = document.getElementById('target');
+    target.textContent = 'Hello';
+    console.log(ev);
+}
+
