@@ -113,7 +113,7 @@ function correctSentence(text) {
     return parola;
 }
 
-console.log(correctSentence("greetings, friends") == "greetings, friends.");
+console.log(correctSentence("greetings, friends") == "Greetings, friends.");
 
 
 

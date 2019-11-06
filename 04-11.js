@@ -25,8 +25,7 @@ function changeOnMouse() {
 }
 
 
-
-function getInfo() {
+ function getInfo() {
     let request = new XMLHttpRequest();
     request.onload = callback;
     request.open("GET", "tom.json");
@@ -43,7 +42,7 @@ function callback() {
     let json = JSON.parse(this.responseText);
     target.value += json.name + '\n';
     target.value += json.job.title + '\n';
-    target.value += json.job.languages + '\n';
+    target.value += json.job.languages + '\n'; 
 }
 
 
@@ -61,7 +60,7 @@ window.onload = (ev) => {
 
 
 
-function getInfoTXT() {
+  function getInfoTXT() {
     let request = new XMLHttpRequest();
     request.onload = callbackTXT;
     request.open("GET", "tom.txt");
@@ -77,7 +76,7 @@ function callbackTXT() {
     let json = JSON.parse(this.responseText);
     target.value += json.name + '\n';
     target.value += json.job.title + '\n';
-    target.value += json.job.languages + '\n';
+    target.value += json.job.languages + '\n'; 
 }
 
 
