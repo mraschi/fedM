@@ -40,8 +40,7 @@ function converter() {
     let result = roman(arabian);
 
     if (!result) {
-        window.alert("inserisci un numero");
-        return;
+        window.alert("errore");
     } else {
         document.getElementById("risultato").textContent = result;
     }
