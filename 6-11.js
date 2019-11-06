@@ -45,8 +45,3 @@ function converter() {
         document.getElementById("risultato").textContent = result;
     }
 }
-
-
-
-
-

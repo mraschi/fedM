@@ -79,7 +79,7 @@ function findMessage(data) {
     return parola;
 }
 console.log(findMessage("Ciao Come Va") === "CCV");
-console.log(findMessage("Io sono JMarco"));
+console.log(findMessage("Io sono Marco"));
 
 
 
