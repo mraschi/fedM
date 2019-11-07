@@ -10,21 +10,31 @@
 </head>
 
 <body>
-
+    <h1>PROFILO PERSONALE</h1>
     <form action="">
         <label>Name</label>
         <input id="name">
         <label>Job</label>
         <input id="job">
-        <label>Language</label>
-        <input>
-        <input type="checkbox" id="langJ" name="lang" value="Java" checked>
-        <label for="langJ">Java</label>
-        <input type="checkbox" id="langPy" name="lang" value="Python">
-        <label for="langPy">Python</label>
-        <input type="checkbox" id="langCpp" name="lang" value="Html" checked>
-        <label for="langCpp">Html</label>
-        <button action="action" onclick="fill()">Autofill</button>
+        <div>
+
+            <label>Language:</label>
+            <input type="checkbox" id="langJS" name="lang" value="Javascript">
+            <label for="langJS">Javascript</label>
+            <input type="checkbox" id="langHtml" name="lang" value="Html">
+            <label for="langHtml">Html</label>
+            <input type="checkbox" id="langCss" name="lang" value="Css">
+            <label for="langCss">CSS</label>
+            <input type="checkbox" id="langJ" name="lang" value="Java">
+            <label for="langJ">Java</label>
+            <input type="checkbox" id="langPy" name="lang" value="Python">
+            <label for="langPy">Python</label>
+            <input type="checkbox" id="langCpp" name="lang" value="Cpp">
+            <label for="langCpp">C++</label>
+            <input type="checkbox" id="langOther" name="lang" value="Other">
+            <label for="langOther">Other</label>
+        </div>
+        <button type="button" onclick="filler()">Autofill</button>
     </form>
 
 
