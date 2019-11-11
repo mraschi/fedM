@@ -12,6 +12,6 @@ fullInfo() string {
     return this.name + " " + this.type;
 }
 
-let a: furredAnimal = new furredAnimal("Pablo", "Dog");
+
 
 
