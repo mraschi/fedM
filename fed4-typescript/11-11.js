@@ -24,3 +24,11 @@
     }
 
     console.log(ordina([3, 5, 1, 7, 12]));
+
+console.log("-------------------esercizio---------------------------------")
+
+function
+
+
+
+
