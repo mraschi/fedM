@@ -25,3 +25,11 @@ class Person {
 let p = new Person('Tom', 'Jones');
 p.fullName = 'Bob Hope';
 console.log(p.fullName);
+
+
+
+
+
+
+
+
