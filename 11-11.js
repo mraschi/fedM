@@ -1,0 +1,9 @@
+function Armstrong(value) {
+
+
+
+
+
+
+
+
