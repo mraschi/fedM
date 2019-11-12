@@ -1,11 +1,12 @@
-export function adjacentElementsProduct(arr: number[]) {
+export function adjacentElementsProduct(arr) {
     let result = [];
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            result.push(arr[i] * arr[j] );
+    let prod= 0;
+    for (let i = 1; i < arr.length; i++) {
+    prod=(arr[i] *arr[i=1]);
+            result.push(prod);
         }
     }
-return Math.max.apply(result);
+return Math.max(...result);
 }
 
-console.log((adjacentElementsProduct([5, 8])==40));
+console.log((adjacentElementsProduct([5, 8, 3]) === 40));
