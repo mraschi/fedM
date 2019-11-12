@@ -8,6 +8,12 @@ function solution(str, ending) {
     }
     return true;
 }
+
+
+
+
+
+
 exports.solution = solution;
 function descendingOrder(n) {
     var arr = n.toString().split('');

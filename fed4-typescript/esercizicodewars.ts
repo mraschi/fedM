@@ -6,6 +6,7 @@ export function solution(str: string, ending: string): boolean {
   }
 
 
+
   export function descendingOrder(n: number) {
 
     let arr = n.toString().split('');
@@ -23,6 +24,7 @@ export function solution(str: string, ending: string): boolean {
   
   descendingOrder(123456);
   
+
 
 
 
