@@ -37,5 +37,3 @@ array.forEach((x) => console.log(x.brush()));
 class Toy {
     type: string;
     constructor(type: string) {
-
-        this.type =type
