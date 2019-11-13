@@ -1,13 +1,12 @@
-"use strict";
-exports.__esModule = true;
-function adjacentElementsProduct(arr) {
+
+function prod(arr) {
     var result = [];
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = i + 1; j < arr.length; j++) {
-            result.push(arr[i] * arr[j]);
-        }
+    var prod = 0;
+    for (var i = 1; i < arr.length; i++) {
+        prod = (arr[i] * arr[i - 1]);
+        result.push(prod);
     }
-    return Math.max(...result);
 }
-exports.adjacentElementsProduct = adjacentElementsProduct;
-console.log((adjacentElementsProduct([5, 8, 3]) === 40));
+exports.prod = prod;
+return Math.max.apply(Math, result);
+console.log((prod([3, 2, 4, 20, 2, 15, 1])) === 80);

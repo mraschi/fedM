@@ -25,10 +25,8 @@ class Cat extends Animal {
     }
 }
 let array = [];
-array.forEach;
-{
-    (x) => {
-        console.log(x.brush());
-    };
+array.forEach((x) => console.log(x.brush()));
+class Toy {
+    constructor(type) { }
 }
 //# sourceMappingURL=Animal.js.map
