@@ -10,7 +10,7 @@ function foldArray(array, runs) {
             arr[i] = array[i] + array[array.length - i - 1];
         }
         array = arr;
-        count =  += 1;
+        count += 1;
     }
     return array;
 }
