@@ -4,7 +4,7 @@ function BMI(weight, height) {
     if (BMI <= 18.5) {
         message = "Underweight";
     } else if (BMI > 18.5 && BMI <= 25) {
-        message = 'Normal';
+        message = "Normal";
     }
     else if (BMI > 25 && BMI <= 30) {
         message = "Overweight";
