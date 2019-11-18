@@ -11,5 +11,10 @@ export class AddItemComponent implements OnInit {
 
   ngOnInit() {
   }
+  add(id: HTMLInputElement, name: HTMLInputElement): boolean {
+    console.log(`(${id.value}, ${name.value})`); return false;
 
-}
+
+
+
+  }
